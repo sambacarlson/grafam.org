@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #141464;
+  --background-light: #2334ff;
+  --background-transparent: #ececec7c;
+  --background-deep: #efefef;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #efefef;
+    --background-light: #2334ff;
+    --background-transparent: #ececec7c;
+    --background-deep: #141464;
+  }
+}
+
+body {
+  color: var(--background-light);
+  background: linear-gradient(
+    var(--background-light) 0%,
+    var(--background-transparent) 4%,
+    var(--background-deep) 40%
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--foreground);
+    background-image: radial-gradient(
+        circle at calc(101% - 2%) 15%,
+        var(--background-transparent) 0%,
+        var(--background-light) 4%,
+        var(--background-deep) 40%
+      ),
+      linear-gradient(
+        to bottom right,
+        var(--background-light) 45%,
+        var(--background-deep)
+      );
+  }
+}
