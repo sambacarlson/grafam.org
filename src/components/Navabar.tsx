@@ -240,7 +240,7 @@ const Navabar = () => {
               >
                 <div className="font-semibold">Pastors & Leaders</div>
                 <span className="text-sm text-gray-500 dark:text-gray-400">
-                  GAFAM pastors and leaders
+                  GRAFAM pastors and leaders
                 </span>
               </Link>
             </li>
