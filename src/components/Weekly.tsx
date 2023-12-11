@@ -7,9 +7,9 @@ const Weekly = () => {
     { title: "Healing service", description: "Thank God its Thursday", day: "Every Thursday", time: "05:00pm - 07:00pm" }
   ]
   return (
-    <div className="flex flex-col w-full my-6">
-      <div className="text-_deep_blue dark:text-white h-10 w-5/6 flex md:w-3/4 self-center px-3 ">
-        <h3 className="text-xl font-bold self-center">Fellowship with us!</h3>
+    <div className="flex flex-col w-full my-6 min-h-fit">
+      <div className="text-_deep_blue dark:text-white h-10 w-full px-3">
+        <h3 className="text-xl md:text-2xl font-bold self-center px-4 border-b border-b-_blue dark:border-b-white">Worship with us!</h3>
       </div>
       <div className="grid md:grid-cols-3 gap-3 px-3 py-3 w-5/6 md:w-3/4 self-center">
         {

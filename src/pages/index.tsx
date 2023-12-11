@@ -1,8 +1,9 @@
+import Directions from "@/components/Directions";
 import Hero from "@/components/Hero";
 import Navabar from "@/components/Navabar";
+import Upcoming from "@/components/Upcoming";
 import Weekly from "@/components/Weekly";
 import { Inter } from "next/font/google";
-import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +22,17 @@ export default function Home() {
         />
       </div> */}
       <Hero />
-      <div className="w-full flex justify-center">
+      <section className="">
+        <div className="w-full min-h-[50vh] flex justify-center items-center my-5  dark:bg-_deep_gray dark:bg-opacity-50 p-4 md:p-8">
         <Weekly />
       </div>
+        <div className="md:w-full min-h-[40vh] md:max-h-[90vh] bg-white dark:bg-transparent flex justify-center mt-4 p-4 md:p-8 pb-6 md:pb-20 ">
+          <Upcoming />
+        </div>
+        <div className="w-full self-center p-4 md:p-8 dark:bg-_deep_gray dark:bg-opacity-40">
+          <Directions />
+        </div>
+      </section>
     </main>
   );
 }
