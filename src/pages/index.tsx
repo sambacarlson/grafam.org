@@ -1,21 +1,38 @@
-import Navabar from '@/components/Navabar'
-import { Inter } from 'next/font/google'
+import Directions from "@/components/Directions";
+import Hero from "@/components/Hero";
+import Navabar from "@/components/Navabar";
+import Upcoming from "@/components/Upcoming";
+import Weekly from "@/components/Weekly";
+import { Inter } from "next/font/google";
 
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
+    <main className="relative flex flex-col min-h-screen">
       <title>GRAFAM</title>
       <Navabar />
-      <main className='min-h-[100vh] flex justify-center mx-2 sm:mx-4 md:mx-8'>
-        <div className='flex flex-col justify-center space-y-3'>
-          <h1 className='text-center text-4xl'>Welcome to GRAFAM</h1>
-          <p className='text-center leading-loose tracking-wider text-sm sm:text-base md:text-lg'>Grace Faith Missions International</p>
-          <small className='bg-blue-500 p-2 text-yellow-200 rounded-lg text-center'> &#x26A0;  We are currently working on the site. come back later for updates</small>
+      {/* <div className="absolute bottom-0 left-0 -z-50">
+        <Image
+          alt="Homepage"
+          src="/lifted-hands.jpg"
+          width={500}
+          height={500}
+          className="w-[100vw] min-h-[100vh] object-cover"
+        />
+      </div> */}
+      <Hero />
+      <section className="">
+        <div className="w-full min-h-[50vh] flex justify-center items-center my-5  dark:bg-_deep_gray dark:bg-opacity-50 p-4 md:p-8">
+        <Weekly />
+      </div>
+        <div className="md:w-full min-h-[40vh] md:max-h-[90vh] bg-white dark:bg-transparent flex justify-center mt-4 p-4 md:p-8 pb-6 md:pb-20 ">
+          <Upcoming />
         </div>
-      </main>
-    </>
-  )
+        <div className="w-full self-center p-4 md:p-8 dark:bg-_deep_gray dark:bg-opacity-40">
+          <Directions />
+        </div>
+      </section>
+    </main>
+  );
 }
