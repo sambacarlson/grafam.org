@@ -1,6 +1,6 @@
 const ProgramCard = ({ program }: { program: { title: string, description: string, day: string, time: string } }) => {
   return (
-    <div className="flex flex-col items-start justify-center p-4 md:p-6 bg-white dark:bg-_gray rounded-md">
+    <div className="flex flex-col items-start justify-center p-6 md:p-8 min-h-[200px] bg-white dark:bg-_gray rounded-md">
       <h4 className="font-bold text-_blue dark:text-white">{program.title}</h4>
       <hr className="border-_blue dark:border-_blue w-full" />
       <p className="my-4 text-_gray dark:text-white">{program.description}</p>
