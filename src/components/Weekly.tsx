@@ -15,7 +15,7 @@ const Weekly = () => {
       <div className="text-_deep_blue dark:text-white h-10 w-full px-3">
         <h3 className="text-xl md:text-2xl font-bold self-center px-4 border-b border-b-_blue dark:border-b-white">Worship with us!</h3>
       </div>
-      <div className="grid md:grid-cols-3 gap-3 px-3 py-3 w-5/6 md:w-3/4 self-center">
+      <div className="grid md:grid-cols-3 gap-3 md:gap-6 md:gap-x-[100px] lg:gap-x-6 px-3 py-3 w-5/6 md:w-3/4 self-center">
         {
           meetings.map(item => (<ProgramCard key={item.description + item.title} program={{
             title: item.title,
