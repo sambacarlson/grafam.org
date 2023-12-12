@@ -1,4 +1,5 @@
 import Directions from "@/components/Directions";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navabar from "@/components/Navabar";
 import Upcoming from "@/components/Upcoming";
@@ -33,6 +34,7 @@ export default function Home() {
           <Directions />
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
