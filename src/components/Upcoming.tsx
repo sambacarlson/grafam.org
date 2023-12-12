@@ -9,7 +9,7 @@ const Upcoming = () => {
         <h3 className="text-xl md:text-2xl font-bold self-center px-4 border-b border-b-_blue dark:border-b-white">Up next!</h3>
       </div>
       <div className="w-full max-h-full p-4 text-white grid grid-cols-1 md:grid-cols-5 ">
-        <div className="md:col-span-3 bg-_deep_gray bg-opacity-30 w-full max-h-full overflow-hidden">
+        <div className="md:col-span-3 bg-_deep_gray bg-opacity-5 dark:bg-opacity-30 w-full max-h-full overflow-hidden">
           <Image src="/SampleProg2.jpeg" alt="upcomming program" width={500} height={500} className="w-full h-full object-contain" />
         </div>
         <div className="md:col-span-2 text-_deep_gray dark:text-white flex flex-col items-center justify-center p-4 space-y-3 ">
